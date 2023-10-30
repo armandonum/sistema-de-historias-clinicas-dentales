@@ -45,7 +45,7 @@ editarUsuario(id, nuevoUsuario) {
         const celdaCorreo = fila.insertCell(5);
         const celdarol=fila.insertCell(6);
 
-        celdaperfil.innerHTML='<img src="/componentes/Icono_title.png" width="60px" alt="" >  '
+        celdaperfil.innerHTML='<img src="/componentes/perfil_doc.png" width="60px" alt="" >  '
         celdaid.innerHTML=usuario.id;
         celdaNombre.innerHTML = usuario.nombre;
         celdacuenta.innerHTML = usuario.cuenta;
