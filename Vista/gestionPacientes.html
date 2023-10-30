@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Pacientes</title>
+<script src="/Modelo/usuario.js"></script>
+    <script src="/Control/controlUsuario.js"></script>
+    <script>
+       
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            controlUsuarios.mostrarUsuarios(true);
+            
+        });
+    </script>
 </head>
 <body>
+
     <h1>Gestionar Pacientes</h1>
+    <div id="contenido">
+        <table>
+          <thead>
+            <tr>
+                <th>perfil</th>
+              <th>id</th>
+              <th>Nombre</th>
+              <th>cuenta</th>
+              <th>Contraseña</th>
+              <th>Correo</th>
+              <th>rol</th>
+              <th>operaciones</th>
+            </tr>
+          </thead>
+          <tbody id="lista-usuarios"></tbody>
+        </table>
+
+        <div id="insertarUser"></div>
+        <div id="editarUser"></div>
 </body>
 </html>
